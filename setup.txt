@@ -1,0 +1,14 @@
+sudo apt-get install python3-usb python3-setuptools
+
+wget -O - "https://github.com/padelt/temper-python/archive/master.zip">temper-python.zip
+
+unzip temper-python.zip 
+
+cd temper-python/
+sudo python3 setup.py install
+
+sudo cp etc/99-tempsensor.rules /etc/udev/rules.d/
+
+
+/usr/local/bin/temper-poll
+

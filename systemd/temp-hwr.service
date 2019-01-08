@@ -1,0 +1,8 @@
+[Unit]
+Description=start temperatur TemPerL
+
+[Service]
+ExecStart=/home/pi/usb-temperatur/usb-hwr-temp.sh  > /tmp/usb-temp-hwr-5min.txt 2>&1
+
+[Install]
+WantedBy=multi-user.target

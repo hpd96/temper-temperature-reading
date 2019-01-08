@@ -1,0 +1,9 @@
+[Unit]
+Description=temp auslesen alle 10min
+
+[Timer]
+OnActiveSec=30s
+OnUnitActiveSec=5m
+
+[Install]
+WantedBy=basic.target

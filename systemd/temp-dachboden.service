@@ -1,0 +1,8 @@
+[Unit]
+Description=start temp dachboden
+
+[Service]
+ExecStart=/home/peter/usb-temperatur/usb-dach-temp.sh  > /tmp/usb-temp-dachboden-5min.txt 2>&1
+
+[Install]
+WantedBy=multi-user.target
